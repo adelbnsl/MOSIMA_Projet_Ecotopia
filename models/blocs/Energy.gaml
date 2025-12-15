@@ -82,11 +82,6 @@ species energy parent:bloc{
 	list<string> get_input_resources_labels{
 		return production_inputs_E;
 	}
-
-	
-	action set_external_producer(string product, bloc bloc_agent){
-		// do nothing
-	}
 	
 	action collect_last_tick_data{
 		if(cycle > 0){ // skip it the first tick

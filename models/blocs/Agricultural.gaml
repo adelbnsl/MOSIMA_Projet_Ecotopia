@@ -71,12 +71,7 @@ species agricultural parent:bloc{
 		do collect_last_tick_data();
 		do population_activity(pop);
 	}
-	
-	action set_external_producer(string product, bloc bloc_agent){
-		ask producer{
-			do set_supplier(product, bloc_agent);
-		}
-	}
+
 	
 	production_agent get_producer{
 		return producer;
